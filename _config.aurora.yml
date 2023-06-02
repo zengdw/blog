@@ -1,0 +1,260 @@
+#! ---------------------------------------------------------------
+#! Aurora Theme for Hexo
+#! ---------------------------------------------------------------
+#! Designed & Coded By TriDiamond
+#! ---------------------------------------------------------------
+
+#! ---------------------------------------------------------------
+#! Site Configs
+#! @docs https://aurora.tridiamond.tech/guide/configuration.html
+#! ---------------------------------------------------------------
+site:
+  subtitle: zengdw's Blog
+  author: zengdw
+  nick:
+  description: 个人学习记录
+  link: "/"
+  language: cn
+  multi_language: false
+  logo: /img/favicon.png
+  avatar: /img/z.png
+  beian:
+    number: "渝ICP备2021003119号-1"
+    link: "http://beian.miit.gov.cn"
+  police_beian:
+    number: ""
+    link: ""
+
+#! ---------------------------------------------------------------
+#! Authors Configs
+#! @docs https://aurora.tridiamond.tech/guide/authors.html
+#! ---------------------------------------------------------------
+authors:
+  ##! example
+  # TriDiamond:
+  #   name: TriDiamond
+  #   avatar: https://up.enterdesk.com/edpic_source/44/ff/3d/44ff3d6bd2819d524facfcc33205d4cd.jpg
+  #   link: https://github.com/TriDiamond
+  #   description: 'Think like an artist, code like an artisan.'
+  #   socials:
+  #     github: https://tridiamond.tech
+
+#! ---------------------------------------------------------------
+#! Menu Configs
+#! @docs https://aurora.tridiamond.tech/guide/menu.html
+#! ---------------------------------------------------------------
+menu:
+  About: true
+  Tags: true
+  Archives:
+    true
+    # 自定义菜单
+  message-board:
+    name: "MessageBoard"
+    i18n:
+      cn: "留言板"
+      en: "Message Board"
+    path: "/page/message-board"
+  # Email:
+  #   name: 'Mail Me'
+  #   path: 'mailto:309606298@qq.com'
+  # 多级 projects 菜单配置
+  # projects:
+  #   name: 'Projects'
+  #   children:
+  #     obsidian:
+  #       name: 'Obsidian Theme'
+  #       path: 'https://github.com/tridiamond/hexo-theme-obsidian'
+  #     Aurora:
+  #       name: 'Aurora Theme'
+  #       path: 'https://github.com/Aurora/hexo-theme-Aurora'
+
+#! ---------------------------------------------------------------
+#! Theme Config
+#! @docs https://aurora.tridiamond.tech/guide/theme.html
+#! ---------------------------------------------------------------
+theme:
+  dark_mode: true
+  profile_shape: circle # support `circle`, `diamond`, `rounded`
+  feature: true
+  gradient:
+    color_1: "#24c6dc"
+    color_2: "#5433ff"
+    color_3: "#ff0099"
+
+#! ---------------------------------------------------------------
+#! Social Configs
+#! @docs https://aurora.tridiamond.tech/guide/social.html
+#! ---------------------------------------------------------------
+socials:
+  github: "https://github.com/zengdw"
+  customs:
+    gitee:
+      icon: /img/svg/gitee.svg
+      link: https://gitee.com/zengdw
+    email:
+      icon: /img/svg/email-fill.svg
+      link: mailto:309606298@qq.com
+
+#! ---------------------------------------------------------------
+#! Site Meta Configs
+#! @docs https://aurora.tridiamond.tech/guide/theme.html
+#! ---------------------------------------------------------------
+site_meta:
+  cdn: cn
+  favicon:
+  description: ""
+  keywords: "zengdw, Web development, java, python, vue, angular, Blog, Spring"
+  author: "zengdw"
+
+#! ---------------------------------------------------------------
+#! Plugins
+#! @docs https://aurora.tridiamond.tech/guide/plugins.html
+#! ---------------------------------------------------------------
+
+# For local development only!
+gitalk:
+  enable: true
+  autoExpand: true
+  clientID: "e6b6be8c63d7b8bfb863"
+  clientSecret: "361718d2989670237bf7ef4110a910e23f002d39"
+  repo: "blog-comments"
+  owner: "zengdw"
+  admin: ["zengdw"]
+  id: blog-comments
+  language: cn
+  distractionFreeMode: true
+  recentComment: true
+  proxy: ""
+
+# Valine comment plugin (recommended!)
+# see https://valine.js.org/quickstart.html
+valine:
+  enable: false
+  app_id: yTGJzJVRTDreMgjTVh2ugA59-MdYXbMMI
+  app_key: SqJN845qzAdE8YsSvpACuDe3
+  avatar: ""
+  placeholder: 请留下您的脚印
+  visitor: true
+  lang: cn
+  avatarForce: false
+  meta: ["nick", "mail"]
+  requiredFields: []
+  admin: "zengdw"
+  recentComment: true
+
+# Enable Busuanzi statistic plugin
+# see http://ibruce.info/2015/04/04/busuanzi/
+busuanzi:
+  enable: true
+
+copy_protection:
+  enable: true
+  author:
+    cn: 作者
+    en: Author
+  link:
+    cn: 本文来自于
+    en: Article is from
+  license:
+    cn: 博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议
+    en: This content is shared under the CC BY-NC-SA 4.0 protocol (Non-Commercial)
+
+#! ---------------------------------------------------------------
+#! Enable Aurora Bot Dia
+#! @docs https://aurora.tridiamond.tech/guide/site-meta.html#custom-meta
+#! ---------------------------------------------------------------
+aurora_bot:
+  enable: true
+  locale: cn
+  bot_type: dia
+  tips:
+    # ======================================================
+    # 将在用户打开浏览器控制台时触发。
+    # ======================================================
+    console: 哈哈，你打开了控制台，是想要看看我的小秘密吗？
+    # ======================================================
+    # 当用户从你的博客上复制内容时触发。
+    # ======================================================
+    copy: 你都复制了些什么呀，转载要记得加上出处哦!
+    # ======================================================
+    # 这将在用户返回窗口时触发。
+    # ======================================================
+    visibility_change: 老朋友，你怎么才回来呀～
+    # ======================================================
+    # 欢迎留言，号码是一天中的时间。
+    # -----------------------------------
+    # eg: 24 = 00:00 也就是午夜
+    # eg: 17-19 = 在下午 5 点到 7 点之间
+    # -----------------------------------
+    # 在一天的这段时间里，Dia 会向你的读者问好
+    # 与相应的消息。
+    # ======================================================
+    welcome:
+      "24": 你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？
+      "5_7": 早上好!一日之计在于晨，美好的一天就要开始了。
+      "7_11": 上午好!工作顺利嘛，不要久坐，多起来走动走动哦!
+      "11_13": 中午了，工作了一个上午，现在是午餐时间!
+      "13_17": 午后很容易犯困呢，今天的运动目标完成了吗？
+      "17_19": 傍晚了!窗外夕阳的景色很美丽呢，最美不过夕阳红～
+      "19_21": 晚上好，今天过得怎么样？
+      "21_23":
+        - 已经这么晚了呀，早点休息吧，晚安～
+        - 深夜时要爱护眼睛呀!
+    # ======================================================
+    # 当用户来自搜索引擎时使用。
+    # ======================================================
+    referrer:
+      # 用户来自你自己的网站。
+      self: 欢迎来到<span>「[PLACEHOLDER]」</span>
+      # 用户来自百度搜索引擎。
+      baidu: Hello!来自 百度搜索 的朋友<br>你是搜索 <span>「[PLACEHOLDER]」</span> 找到的我吗？
+      # 用户来自360搜索引擎。
+      so: Hello!来自 360搜索 的朋友<br>你是搜索 <span>「[PLACEHOLDER]」</span> 找到的我吗？
+      # 用户来自谷歌搜索引擎。
+      google: Hello!来自 谷歌搜索 的朋友<br>欢迎阅读<span>「[PLACEHOLDER]」</span>
+      # 用户来自另一个网站。
+      site: Hello!来自 <span>[PLACEHOLDER]</span> 的朋友
+      # 任何其他来源。
+      other: 感谢您阅读： <span>「[PLACEHOLDER]」</span>
+    # ======================================================
+    # 在特定的日期，Dia会向你的读者问候。
+    # ------------------------------------------------------
+    # date: 特别活动的日期(格式:月/日或月/日-月/日)
+    # text:
+    # ---只使用一个简单的字符串。
+    # -——消息的随机集合，使用数组配置格式。
+    # ======================================================
+    events:
+      - date: 01/01
+        text: "<span>元旦</span>了呢，新的一年又开始了，今年是{year}年～"
+      - date: 02/14
+        text: 又是一年<span>情人节</span>，{year}年找到对象了嘛～
+      - date: 03/08
+        text: 今天是<span>国际妇女节</span>!
+      - date: 03/12
+        text: 今天是<span>植树节</span>，要保护环境呀!
+      - date: 04/01
+        text: 悄悄告诉你一个秘密～<span>今天是愚人节，不要被骗了哦～</span>
+      - date: 05/01
+        text: 今天是<span>五一劳动节</span>，计划好假期去哪里了吗～
+      - date: 06/01
+        text: "<span>儿童节</span>了呢，快活的时光总是短暂，要是永远长不大该多好啊…"
+      - date: "09/03"
+        text: "<span>中国人民抗日战争胜利纪念日</span>，铭记历史、缅怀先烈、珍爱和平、开创未来。"
+      - date: "09/10"
+        text: "<span>教师节</span>，在学校要给老师问声好呀～"
+      - date: 10/01
+        text: "<span>国庆节</span>到了，为祖国母亲庆生!"
+      - date: 11/05-11/12
+        text: 今年的<span>双十一</span>是和谁一起过的呢～
+      - date: 12/20-12/31
+        text: 这几天是<span>圣诞节</span>，主人肯定又去剁手买买买了～
+
+#! ---------------------------------------------------------------
+#! Injections
+#! @docs https://aurora.tridiamond.tech/guide/site-meta.html#custom-meta
+#! ---------------------------------------------------------------
+injects:
+  scripts:
+  css:
