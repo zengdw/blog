@@ -49,12 +49,12 @@ menu:
   Archives:
     true
     # 自定义菜单
-  message-board:
-    name: "MessageBoard"
-    i18n:
-      cn: "留言板"
-      en: "Message Board"
-    path: "/page/message-board"
+  # message-board:
+  #   name: "MessageBoard"
+  #   i18n:
+  #     cn: "留言板"
+  #     en: "Message Board"
+  #   path: "/page/message-board"
   # Email:
   #   name: 'Mail Me'
   #   path: 'mailto:309606298@qq.com'
