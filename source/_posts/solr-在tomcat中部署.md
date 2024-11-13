@@ -110,7 +110,7 @@ solr 的 core 主目录（server/solr）
 
 4、重启tomcat
 
-![solr-add-core](http://img.zengdw.com/solr-add-core.png)
+![solr-add-core](../images/solr-add-core.png)
 
 
 

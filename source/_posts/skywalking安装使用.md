@@ -18,7 +18,7 @@ date: 2020-09-21 16:54:44
 
 ###  1、下载解压后的文件结构：
 
-![image-20200922155624650](http://img.zengdw.com/image-20200922155624650.png)
+![image-20200922155624650](../images/image-20200922155624650.png)
 
 ### 2、修改后端配置文件
 
@@ -26,27 +26,27 @@ date: 2020-09-21 16:54:44
 
 启动方式，默认单机启动
 
-![image-20200922161543029](http://img.zengdw.com/image-20200922161543029.png)
+![image-20200922161543029](../images/image-20200922161543029.png)
 
 HTTP和RPC地址和端口
 
-![image-20200922161820052](http://img.zengdw.com/image-20200922161820052.png)
+![image-20200922161820052](../images/image-20200922161820052.png)
 
 数据存储位置，默认H2。可选es，es7，mysql
 
-![image-20200922161919461](http://img.zengdw.com/image-20200922161919461.png)
+![image-20200922161919461](../images/image-20200922161919461.png)
 
 ### 3、UI项目配置文件
 
 `apache-skywalking-apm-bin\webapp\webapp.yml`
 
-![image-20200922162750191](http://img.zengdw.com/image-20200922162750191.png)
+![image-20200922162750191](../images/image-20200922162750191.png)
 
 ### 4、启动skywalking
 
 进入`apache-skywalking-apm-bin\bin`文件夹
 
-![image-20200922162129431](http://img.zengdw.com/image-20200922162129431.png)
+![image-20200922162129431](../images/image-20200922162129431.png)
 
 至此skywalking环境就搭建成功。在浏览器输入`http://127.0.0.1:8080`地址后就能看到UI界面
 
@@ -125,7 +125,7 @@ agent.service_name=${SW_AGENT_NAME:Your_ApplicationName}
 
 ### 在IDEA中使用
 
-![image-20200922170014378](http://img.zengdw.com/image-20200922170014378.png)
+![image-20200922170014378](../images/image-20200922170014378.png)
 
 ### linux下在tomcat中使用
 
