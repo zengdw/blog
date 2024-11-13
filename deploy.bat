@@ -5,7 +5,7 @@ echo *************update******************
 git add .
 git commit -m "add file"
 git pull
-git push
+git push 
 
 echo *************clean*******************
 call npx hexo clean
