@@ -14,9 +14,9 @@ echo *************generate****************
 call npx hexo generate
 
 echo *************clean remote folder*****
-call ssh zdw@vps.zengdw.com "cd /data/blog; rm -rf *"
+call ssh zdw@vps.zengdw.com -p 2222 "cd /data/blog; rm -rf *"
 
 echo *************copy file***************
-scp -r ./public/* zdw@vps.zengdw.com:/data/blog/
+scp -r ./public/* -p 2222 zdw@vps.zengdw.com:/data/blog/
 
 pause 
