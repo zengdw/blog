@@ -17,6 +17,6 @@ echo *************clean remote folder*****
 call ssh zdw@vps.zengdw.com -p 2222 "cd /data/blog; rm -rf *"
 
 echo *************copy file***************
-scp  -p 2222 -r ./public/* zdw@vps.zengdw.com:/data/blog/
+scp -P 2222 -r ./public/* zdw@vps.zengdw.com:/data/blog/
 
 pause 
