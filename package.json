@@ -23,6 +23,5 @@
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
     "hexo-theme-aurora": "^1.5.5"
-  },
-  "packageManager": "yarn@4.5.0"
+  }
 }
